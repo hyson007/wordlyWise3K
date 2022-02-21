@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-func RapidAPIGet(word string, print bool) ([]byte, error) {
+func RapidAPIGet2(word string, print bool) ([]byte, error) {
 	url := fmt.Sprintf("https://wordsapiv1.p.rapidapi.com/words/%s", word)
 	req, _ := http.NewRequest("GET", url, nil)
 	req.Header.Add("x-rapidapi-host", "your_host")
